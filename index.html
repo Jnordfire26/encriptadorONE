@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es-co">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Encriptador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+   
+</head>
+<body>
+    <header>
+        <div class="container__header">
+            <div class="header">  
+            <a href="#">
+                <img class="logo" src="./assets/imagenes/alura.svg" alt="Alura">
+            </a>
+            </div>  
+        </div>
+    </header>
+    <main>
+        <article class="container">
+            <section class="left" id="left">
+                <textarea class="inputtextarea" id="textoInput" placeholder="Ingrese el texto aquí" autofocus></textarea>
+                <div class="content_botones">
+                    <span class="info">
+                        <img src="./assets/imagenes/!.svg" alt="advertencia" />
+                        Solo letras minúsculas y sin acentos
+                    </span>
+                    <div class="botones">
+                        <button id="button__encriptar" class="button__encriptar">Encriptar</button>
+                        <button id="button__desencriptar" class="button__desencriptar">Desencriptar</button>
+                    </div>
+                </div>
+            </section>
+            <section class="right" id="rigth">
+                <img id="munheco" class="munheco" src="./assets/imagenes/munheco.svg" alt="Ningún mensaje fue encontrado. Ingresa el texto que desees encriptar o desencriptar.">
+                <textarea id="textoFinal" class="textoFinal" placeholder="Ningún mensaje fue encontrado"></textarea>
+                <p id="textoInfo" class="info">Ingresa el texto que desees encriptar o desencriptar.</p>
+                <button class="button__copiar bn_ocultar" id="button__copiar">Copiar</button>
+                <div id="modal1" class="styleModal">
+                    <div class="modal-content">
+                        <span class="close1">&times;</span>
+                        <p>Texto Copiado!</p>
+                    </div>
+                </div>
+                <div id="modal2" class="styleModal">
+                    <div class="modal-content">
+                        <span class="close2">&times;</span>
+                        <p>Ingrese el texto a encriptar</p>
+                    </div>
+                </div>
+                <div id="modal3" class="styleModal">
+                    <div class="modal-content">
+                        <span class="close3">&times;</span>
+                        <p>Ingrese el texto a desencriptar</p>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer class="footer">
+        
+        <p class="parrafoFooter">Creado por 
+            <a class="textoFooter" href="https://github.com/Jnordfire26/" target="_blank">
+                Juan Nicolas Quiroga Moreno
+            </a>            
+        </p>
+
+        <div>
+            <a class="logoFooter" href="https://github.com/Jnordfire26" target="_blank">
+                <img class="links" src="./assets/imagenes/github.svg" />
+            </a>
+            
+            <a class="logoFooter" href="https://www.linkedin.com/in/juan-nicol%C3%A1s-quiroga-moreno/" target="_blank">
+                <img class="links" src="./assets/imagenes/linkedin.svg" />
+            </a>
+        </div>
+    </footer>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
